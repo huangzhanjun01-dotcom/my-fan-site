@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRAEWA 个人档案</title>
+<style>
+  body { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; margin: 0; padding: 20px; line-height: 1.6; background: url('https://i.postimg.cc/505wFM9D/wei-xin-tu-pian-20260925153149-26-2.jpg') no-repeat center center fixed; background-size: cover; }
+  body::before { content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.85); z-index: -1; }
+  .nav { text-align: center; background: rgba(255, 255, 255, 0.95); padding: 15px; border-radius: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 30px; position: sticky; top: 10px; z-index: 100; }
+  .nav a { margin: 0 10px; color: #e91e63; text-decoration: none; font-weight: bold; font-size: 16px; }
+  .card { background: white; border-radius: 12px; padding: 25px; margin: 25px auto; max-width: 800px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .card h2 { border-bottom: 2px solid #e91e63; padding-bottom: 8px; margin-top: 10px; }
+  .card img { max-width: 100%; border-radius: 10px; margin: 10px 0; display: block; }
+  .btn { display: inline-block; background: #e91e63; color: white !important; padding: 8px 16px; border-radius: 20px; text-decoration: none; margin: 5px; font-size: 14px; }
+  footer { text-align: center; color: #999; font-size: 13px; margin-top: 40px; background: rgba(255,255,255,0.8); padding: 15px; border-radius: 10px; max-width: 800px; margin-left: auto; margin-right: auto; }
+</style>
+</head>
+<body>
+
+  <div class="nav">
+    <a href="index.html">🏠 首页</a>
+    <a href="noon.html" style="color: #4CAF50;">💚 NOON</a>
+    <a href="praewa.html" style="color: #FF69B4;">🩷 PRAEWA</a>
+    <a href="duo.html">💕 双人作品</a>
+    <a href="cosmos.html">✨ Cosmos Son</a>
+  </div>
+
+  <div class="card">
+    <h2>style="color: #FF69B4;">🩷 PRAEWA</h2>
+    <img src="https://i.postimg.cc/j2K48Skf/praewmag.jpg" alt="PRAEWA照片">
+    <p>在这里写PRAEWA的个人介绍。</p>
+    <ul>
+      <li>全名：Putticha Boonyamas（พุทธิชา บุญมาศ）（</li>
+      <li>小名：Praewa（แพรวา）</li>
+      <li>中文名：甜甜（粉丝取）</li》
+      <li>生日：2003年1月24日（佛历:2546年1月24日）</li>
+      <li>星座：水瓶座</li>
+      <li>家乡：孔敬</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>📱 社交账号（点击直达）</h2>
+    <div style="text-align:center;">
+      <a href="在这里放IG链接" target="_blank" class="btn">Instagram</a>
+      <a href="在这里放油管链接" target="_blank" class="btn">YouTube</a>
+      <a href="在这里放X链接" target="_blank" class="btn">X (Twitter)</a>
+      <a href="在这里放微博链接" target="_blank" class="btn">微博</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🎬 个人 YouTube 视频</h2>
+    <ul>
+      <li><a href="在这里放油管视频链接" target="_blank">视频1：视频名字</a></li>
+      <li><a href="在这里放油管视频链接" target="_blank">视频2：视频名字</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>本站为个人粉丝网站，非商业用途。所有图片、视频版权归原作者所有，侵删。</p>
+  </footer>
+</body>
+</html>
