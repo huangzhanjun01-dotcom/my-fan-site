@@ -21,9 +21,13 @@
   .btn { display: inline-block; background: #e91e63; color: white !important; padding: 8px 16px; border-radius: 20px; text-decoration: none; margin: 5px; font-size: 14px; transition: 0.3s; }
   .btn:hover { background: #c2185b; }
 
-  /* 🔥 视频内嵌播放器样式（用于HTML5 video和iframe） */
-  .video-box { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 15px 0; border-radius: 10px; background: #000; }
-  .video-box iframe, .video-box video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+  /* 🎬 横屏视频播放器（用于B站、YouTube等） */
+  .video-box-horizontal { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 15px 0; border-radius: 10px; background: #000; }
+  .video-box-horizontal iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+  /* 📱 竖屏视频播放器（专用于 Instagram 尺寸视频） */
+  .video-box-vertical { max-width: 400px; margin: 15px auto; border-radius: 10px; overflow: hidden; background: #000; }
+  .video-box-vertical video { width: 100%; height: auto; display: block; }
 
   footer { text-align: center; color: #999; font-size: 13px; margin-top: 40px; background: rgba(255,255,255,0.8); padding: 15px; border-radius: 10px; max-width: 800px; margin-left: auto; margin-right: auto; }
 </style>
@@ -52,9 +56,9 @@
       <img src="love-senior/6.jpg" alt="学姐爱我可以吗 剧照6">
     </div>
 
-    <!-- 网页内嵌播放器（请替换成具体的B站BV号，如果没有B站视频，可以删掉这个video-box） -->
-    <div class="video-box">
-      <iframe src="https://www.instagram.com/reel/CvuNXDfp_U7/embed" allowfullscreen frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+    <!-- 横屏播放器（如果有B站视频，把下面的BV号换成具体的） -->
+    <div class="video-box-horizontal">
+      <iframe src="//player.bilibili.com/player.html?bvid=换成学姐正片的BV号&page=1" allowfullscreen></iframe>
     </div>
     <p style="text-align:center; margin-top:15px;">
       <a href="https://www.youtube.com/results?search_query=Love+Senior+Series" target="_blank" class="btn">📺 YouTube 观看</a>
@@ -76,7 +80,7 @@
       <img src="love-senior-special/6.jpg" alt="学姐爱我可以吗 番外篇 剧照6">
     </div>
 
-    <div class="video-box">
+    <div class="video-box-horizontal">
       <iframe src="//player.bilibili.com/player.html?bvid=换成番外篇的BV号&page=1" allowfullscreen></iframe>
     </div>
     <p style="text-align:center; margin-top:15px;">
@@ -99,7 +103,7 @@
       <img src="taste-milk/6.jpg" alt="淡奶之爱 剧照6">
     </div>
 
-    <div class="video-box">
+    <div class="video-box-horizontal">
       <iframe src="//player.bilibili.com/player.html?bvid=换成淡奶之爱的BV号&page=1" allowfullscreen></iframe>
     </div>
     <p style="text-align:center; margin-top:15px;">
@@ -115,19 +119,19 @@
       <li>歌曲《แฟนเธอ... (I Don't Like)》：<a href="https://www.bilibili.com/video/BV1qt411j7v9/" target="_blank" class="btn" style="padding: 4px 10px; font-size: 12px;">点击看MV（B站）</a></li>
     </ul>
 
-    <h3 style="margin-top: 30px;">🎬 NOON 的 Instagram 视频</h3>
-    <p>点击播放按钮，直接在网页里观看（不用跳转）。</p>
+    <h3 style="margin-top: 30px;">🎬 Instagram 视频</h3>
+    <p>点击播放按钮，直接在网页里观看完整竖屏视频（不用跳转，国内可看）。</p>
     
-    <!-- 🔥 这里使用HTML5 video标签，实现网页内直接播放！ -->
-    <div class="video-box">
+    <!-- 🔥 这里是完美适配竖屏视频的播放器，需把 noon-ig.mp4 上传到 GitHub 仓库 -->
+    <div class="video-box-vertical">
       <video controls>
-        <!-- 请确保视频已下载并命名为 noon-ig.mp4 上传到 GitHub 仓库 -->
+        <!-- 请确保视频已完整下载并命名为 noon-ig.mp4 -->
         <source src="noon-ig.mp4" type="video/mp4">
         你的浏览器不支持 HTML5 视频播放。
       </video>
     </div>
     <p style="text-align:center; font-size:12px; color:#e91e63; margin-top:10px;">
-      ⚠️ 提示：请先把 IG 视频下载并重命名为 <strong>noon-ig.mp4</strong> 上传到 GitHub 仓库，否则视频无法播放。
+      ⚠️ 提示：请把下载好的视频命名为 <strong>noon-ig.mp4</strong> 上传到 GitHub 仓库，否则上方播放器会一片空白。
     </p>
   </div>
 
