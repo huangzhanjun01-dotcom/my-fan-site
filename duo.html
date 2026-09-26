@@ -26,16 +26,9 @@
   .btn { display: inline-block; background: #e91e63; color: white !important; padding: 8px 16px; border-radius: 20px; text-decoration: none; margin: 5px; font-size: 14px; transition: 0.3s; }
   .btn:hover { background: #c2185b; }
 
-  /* 🎬 网页内嵌视频专属样式（不拉伸，不裁剪，自适应原尺寸） */
-  .video-container { text-align: center; margin: 20px 0; background: #000; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
-  .video-container video { 
-    max-width: 100%;
-    max-height: 80vh;
-    width: auto;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
+  /* 🔥 B站播放器专属自适应外框（手机电脑通用，不拉伸） */
+  .bili-video-box { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; margin-top: 15px; background: #000; }
+  .bili-video-box iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
   footer { text-align: center; color: #999; font-size: 13px; margin-top: 40px; background: rgba(255,255,255,0.8); padding: 15px; border-radius: 10px; max-width: 800px; margin-left: auto; margin-right: auto; }
 </style>
@@ -48,7 +41,7 @@
     <a href="noon.html" style="color: #4CAF50;">💚 NOON</a>
     <a href="praewa.html" style="color: #FF69B4;">🩷 PRAEWA</a>
     <a href="duo.html">💕 双人作品</a>
-    <a href="cosmos.html">✨ Cosmos Som</a>
+    <a href="cosmos.html">✨ Cosmos Son</a>
   </div>
 
   <!-- ================= 剧 1：正片 ================= -->
@@ -68,12 +61,10 @@
       <img src="https://i.postimg.cc/cLvVLNB8/GDZj9PUb-YAAbo-Mm.jpg" alt="学姐爱我可以吗 剧照9">
     </div>
 
-    <!-- 🔥 正片视频直接播放（需上传 love-senior.mp4 到 GitHub） -->
-    <div class="video-container">
-      <video controls>
-        <source src="love-senior.mp4" type="video/mp4">
-        你的浏览器不支持 HTML5 视频播放。
-      </video>
+     <!-- 🔥 B站嵌入播放器（不跳转，直接在网页看） -->
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; margin-top: 15px;">
+      <!-- 这里直接把你的BV号填进去了 -->
+      <iframe src="//player.bilibili.com/player.html?bvid=BV1bNhR6jEM9&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
     <p style="text-align:center; margin-top:15px;">
@@ -96,12 +87,10 @@
       <img src="love-senior-special/6.jpg" alt="学姐爱我可以吗 番外篇 剧照6">
     </div>
 
-    <!-- 🔥 番外篇视频直接播放（需上传 love-senior-special.mp4 到 GitHub） -->
-    <div class="video-container">
-      <video controls>
-        <source src="love-senior-special.mp4" type="video/mp4">
-        你的浏览器不支持 HTML5 视频播放。
-      </video>
+    <!-- 🔥 番外篇 B站嵌入播放器 -->
+    <div class="bili-video-box">
+      <!-- ⚠️ 把下方 bvid= 后面的 BV号换成你番外篇的真实BV号 -->
+      <iframe src="//player.bilibili.com/player.html?bvid=换成你番外篇的BV号&page=1" scrolling="no" allowfullscreen="true"></iframe>
     </div>
     
     <p style="text-align:center; margin-top:15px;">
@@ -124,12 +113,10 @@
       <img src="taste-milk/6.jpg" alt="淡奶之爱 剧照6">
     </div>
 
-    <!-- 🔥 淡奶之爱视频直接播放（需上传 taste-milk.mp4 到 GitHub） -->
-    <div class="video-container">
-      <video controls>
-        <source src="taste-milk.mp4" type="video/mp4">
-        你的浏览器不支持 HTML5 视频播放。
-      </video>
+    <!-- 🔥 淡奶之爱 B站嵌入播放器 -->
+    <div class="bili-video-box">
+      <!-- ⚠️ 把下方 bvid= 后面的 BV号换成你淡奶之爱的真实BV号 -->
+      <iframe src="//player.bilibili.com/player.html?bvid=换成你淡奶之爱的BV号&page=1" scrolling="no" allowfullscreen="true"></iframe>
     </div>
 
     <p style="text-align:center; margin-top:15px;">
@@ -148,12 +135,10 @@
     <h3 style="margin-top: 30px;">🎬 Instagram 视频</h3>
     <p>点击播放按钮，直接在网页里观看完整视频（尺寸和原视频一模一样，无裁剪，不跳转）。</p>
     
-    <div class="video-container">
-      <!-- 你已经上传的 noon-ig.mp4 -->
-      <video controls>
-        <source src="noon-ig.mp4" type="video/mp4">
-        你的浏览器不支持 HTML5 视频播放。
-      </video>
+    <!-- 🔥 IG视频 B站嵌入播放器（需先把IG视频传上B站） -->
+    <div class="bili-video-box">
+      <!-- ⚠️ 把下方 bvid= 后面的 BV号换成你IG视频的真实BV号 -->
+      <iframe src="//player.bilibili.com/player.html?bvid=换成你IG视频的BV号&page=1" scrolling="no" allowfullscreen="true"></iframe>
     </div>
   </div>
 
