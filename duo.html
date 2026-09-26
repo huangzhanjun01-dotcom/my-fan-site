@@ -21,6 +21,10 @@
   .btn { display: inline-block; background: #e91e63; color: white !important; padding: 8px 16px; border-radius: 20px; text-decoration: none; margin: 5px; font-size: 14px; transition: 0.3s; }
   .btn:hover { background: #c2185b; }
 
+  /* 🔥 视频内嵌播放器样式（用于HTML5 video和iframe） */
+  .video-box { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 15px 0; border-radius: 10px; background: #000; }
+  .video-box iframe, .video-box video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
   footer { text-align: center; color: #999; font-size: 13px; margin-top: 40px; background: rgba(255,255,255,0.8); padding: 15px; border-radius: 10px; max-width: 800px; margin-left: auto; margin-right: auto; }
 </style>
 </head>
@@ -40,7 +44,6 @@
     <p>剧情简介：前期 Warang 满心都是 Gyoza，Prang 默默守护，看着 Warang 因为 Gyoza 的恋情难过、吃醋。Prang 从不强行索取，只是持续陪伴。Warang 慢慢察觉到 Prang 的心意，一开始没有回应。经历各种情绪拉扯，她慢慢放下对 Gyoza 多年的单向暗恋，回头看见一直守在自己身边的 Prang。Warang 走出执念，看清自己真正想要的人是 Prang，两人双向奔赴，正式在一起。</p>
     
     <div class="photo-grid">
-      <!-- 去GitHub建 love-senior 文件夹，把照片传进去 -->
       <img src="love-senior/1.jpg" alt="学姐爱我可以吗 剧照1">
       <img src="love-senior/2.jpg" alt="学姐爱我可以吗 剧照2">
       <img src="love-senior/3.jpg" alt="学姐爱我可以吗 剧照3">
@@ -49,6 +52,10 @@
       <img src="love-senior/6.jpg" alt="学姐爱我可以吗 剧照6">
     </div>
 
+    <!-- 网页内嵌播放器（请替换成具体的B站BV号，如果没有B站视频，可以删掉这个video-box） -->
+    <div class="video-box">
+      <iframe src="https://www.instagram.com/reel/CvuNXDfp_U7/embed" allowfullscreen frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+    </div>
     <p style="text-align:center; margin-top:15px;">
       <a href="https://www.youtube.com/results?search_query=Love+Senior+Series" target="_blank" class="btn">📺 YouTube 观看</a>
       <a href="https://www.bilibili.com/search?keyword=学姐爱我可以吗" target="_blank" class="btn">📺 B站 观看</a>
@@ -61,7 +68,6 @@
     <p>剧情简介：两人已经是稳定情侣，进入职场。核心矛盾：Prang 偶然发现姐姐 Thida 从前深爱 Warang 这件事，巨大的冲击让 Prang 心里产生隔阂、不安，引发感情危机。Thida 坦诚自己当年的心意，但是表示早已放下，祝福 Warang 和 Prang。三人解开多年的心结，Prang 和 Warang 互相沟通、化解猜忌，感情更加稳固，是成熟成年人的恋爱，甜度很高。</p>
     
     <div class="photo-grid">
-      <!-- 去GitHub建 love-senior-special 文件夹 -->
       <img src="love-senior-special/1.jpg" alt="学姐爱我可以吗 番外篇 剧照1">
       <img src="love-senior-special/2.jpg" alt="学姐爱我可以吗 番外篇 剧照2">
       <img src="love-senior-special/3.jpg" alt="学姐爱我可以吗 番外篇 剧照3">
@@ -70,6 +76,9 @@
       <img src="love-senior-special/6.jpg" alt="学姐爱我可以吗 番外篇 剧照6">
     </div>
 
+    <div class="video-box">
+      <iframe src="//player.bilibili.com/player.html?bvid=换成番外篇的BV号&page=1" allowfullscreen></iframe>
+    </div>
     <p style="text-align:center; margin-top:15px;">
       <a href="https://www.youtube.com/results?search_query=Love+Senior+Special" target="_blank" class="btn">📺 YouTube 观看</a>
       <a href="https://www.bilibili.com/search?keyword=学姐爱我可以吗+番外" target="_blank" class="btn">📺 B站 观看</a>
@@ -79,11 +88,9 @@
   <!-- ================= 剧 3：淡奶之爱 ================= -->
   <div class="card">
     <h2>📺 合作电视剧：《淡奶之爱》（The Taste of Fresh Milk）</h2>
-    <p>剧情简介：Yingyam 和 Beauty 是最好的朋友。Yingyam 一直深藏爱意，安静陪在 Beauty 身边，看着 Beauty 和女友 Jan 谈恋爱，只能把喜欢压在心底，不敢表露。Beauty 只把她当成最信任的闺蜜，没有察觉 Yingyam 的深情。Beauty 和 Jan 的恋情本身就充满争吵、猜忌，两人性格不合，矛盾越来越多。Yingyam 一直默默关心、保护 Beauty，在 Beauty 难过受伤的时候一直陪着她。Beauty 和 Jan 最后分手。分手之后，Beauty 才慢慢察觉到 Yingyam 看向自己的眼神不一样，慢慢读懂 Yingyam 长久以来藏着的心意。Beauty 经历失恋，静下心回头看见 Yingyam 长久不变的陪伴。两人解开所有心结，从多年好友转为恋人，走到一起。
-这条线是**年上沉稳守护姐 × 自由洒脱艺术学妹**，和《学姐爱我可以吗》Warang×Prang 是同一组演员，但人设完全不一样。</p>
+    <p>剧情简介：Yingyam 和 Beauty 是最好的朋友。Yingyam 一直深藏爱意，安静陪在 Beauty 身边，看着 Beauty 和女友 Jan 谈恋爱，只能把喜欢压在心底，不敢表露。Beauty 只把她当成最信任的闺蜜，没有察觉 Yingyam 的深情。Beauty 和 Jan 的恋情本身就充满争吵、猜忌，两人性格不合，矛盾越来越多。Yingyam 一直默默关心、保护 Beauty，在 Beauty 难过受伤的时候一直陪着她。Beauty 和 Jan 最后分手。分手之后，Beauty 才慢慢察觉到 Yingyam 看向自己的眼神不一样，慢慢读懂 Yingyam 长久以来藏着的心意。Beauty 经历失恋，静下心回头看见 Yingyam 长久不变的陪伴。两人解开所有心结，从多年好友转为恋人，走到一起。这条线是**年上沉稳守护姐 × 自由洒脱艺术学妹**，和《学姐爱我可以吗》Warang×Prang 是同一组演员，但人设完全不一样。</p>
     
     <div class="photo-grid">
-      <!-- 去GitHub建 taste-milk 文件夹 -->
       <img src="taste-milk/1.jpg" alt="淡奶之爱 剧照1">
       <img src="taste-milk/2.jpg" alt="淡奶之爱 剧照2">
       <img src="taste-milk/3.jpg" alt="淡奶之爱 剧照3">
@@ -92,19 +99,36 @@
       <img src="taste-milk/6.jpg" alt="淡奶之爱 剧照6">
     </div>
 
+    <div class="video-box">
+      <iframe src="//player.bilibili.com/player.html?bvid=换成淡奶之爱的BV号&page=1" allowfullscreen></iframe>
+    </div>
     <p style="text-align:center; margin-top:15px;">
       <a href="https://www.youtube.com/results?search_query=The+Taste+of+Fresh+Milk" target="_blank" class="btn">📺 YouTube 观看</a>
       <a href="https://www.bilibili.com/search?keyword=淡奶之爱" target="_blank" class="btn">📺 B站 观看</a>
     </p>
   </div>
 
-  <!-- ================= 合作歌曲 ================= -->
+  <!-- ================= 合作歌曲 & IG视频 ================= -->
   <div class="card">
     <h2>🎵 合作歌曲 & MV</h2>
     <ul>
       <li>歌曲《แฟนเธอ... (I Don't Like)》：<a href="https://www.bilibili.com/video/BV1qt411j7v9/" target="_blank" class="btn" style="padding: 4px 10px; font-size: 12px;">点击看MV（B站）</a></li>
-      <!-- 有别的合作歌曲，照着上面这行的格式加 li 即可 -->
     </ul>
+
+    <h3 style="margin-top: 30px;">🎬 NOON 的 Instagram 视频</h3>
+    <p>点击播放按钮，直接在网页里观看（不用跳转）。</p>
+    
+    <!-- 🔥 这里使用HTML5 video标签，实现网页内直接播放！ -->
+    <div class="video-box">
+      <video controls>
+        <!-- 请确保视频已下载并命名为 noon-ig.mp4 上传到 GitHub 仓库 -->
+        <source src="noon-ig.mp4" type="video/mp4">
+        你的浏览器不支持 HTML5 视频播放。
+      </video>
+    </div>
+    <p style="text-align:center; font-size:12px; color:#e91e63; margin-top:10px;">
+      ⚠️ 提示：请先把 IG 视频下载并重命名为 <strong>noon-ig.mp4</strong> 上传到 GitHub 仓库，否则视频无法播放。
+    </p>
   </div>
 
   <footer>
