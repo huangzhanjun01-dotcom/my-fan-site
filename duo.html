@@ -13,7 +13,7 @@
   .card h2 { border-bottom: 2px solid #e91e63; padding-bottom: 8px; margin-top: 10px; }
   .card img { max-width: 100%; border-radius: 10px; margin: 10px 0; display: block; }
   
-  /* 剧照网格布局（手机和电脑自适应） */
+  /* 剧照网格布局 */
   .photo-grid { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 15px 0; }
   .photo-grid img { width: calc(33.33% - 10px); height: 180px; object-fit: cover; border-radius: 8px; margin: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
   
@@ -21,13 +21,17 @@
   .btn { display: inline-block; background: #e91e63; color: white !important; padding: 8px 16px; border-radius: 20px; text-decoration: none; margin: 5px; font-size: 14px; transition: 0.3s; }
   .btn:hover { background: #c2185b; }
 
-  /* 🎬 横屏视频播放器（用于B站、YouTube等） */
-  .video-box-horizontal { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 15px 0; border-radius: 10px; background: #000; }
-  .video-box-horizontal iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-
-  /* 📱 竖屏视频播放器（专用于 Instagram 尺寸视频） */
-  .video-box-vertical { max-width: 400px; margin: 15px auto; border-radius: 10px; overflow: hidden; background: #000; }
-  .video-box-vertical video { width: 100%; height: auto; display: block; }
+  /* 🎬 播放器样式：完美还原原视频尺寸，不拉伸不裁剪 */
+  .video-container { text-align: center; margin: 15px 0; }
+  .video-container video { 
+    max-width: 100%;    /* 适配手机屏幕 */
+    max-height: 80vh;   /* 限制最大高度，防止竖屏视频在电脑上太长 */
+    width: auto;        /* 宽度跟着原视频比例走 */
+    height: auto;       /* 高度跟着原视频比例走 */
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
+    background: #000; 
+  }
 
   footer { text-align: center; color: #999; font-size: 13px; margin-top: 40px; background: rgba(255,255,255,0.8); padding: 15px; border-radius: 10px; max-width: 800px; margin-left: auto; margin-right: auto; }
 </style>
@@ -39,11 +43,11 @@
     <a href="noon.html" style="color: #4CAF50;">💚 NOON</a>
     <a href="praewa.html" style="color: #FF69B4;">🩷 PRAEWA</a>
     <a href="duo.html">💕 双人作品</a>
-    <a href="cosmos.html">✨ Cosmos Son</a>
+    <a href="cosmos.html">✨ Cosmos Som</a>
   </div>
 
   <!-- ================= 剧 1：正片 ================= -->
- <div class="card">
+  <div class="card">
     <h2>📺 合作电视剧：《学姐爱我可以吗》（Love Senior）</h2>
     <p>剧情简介：前期 Warang 满心都是 Gyoza，Prang 默默守护，看着 Warang 因为 Gyoza 的恋情难过、吃醋。Prang 从不强行索取，只是持续陪伴。Warang 慢慢察觉到 Prang 的心意，一开始没有回应。经历各种情绪拉扯，她慢慢放下对 Gyoza 多年的单向暗恋，回头看见一直守在自己身边的 Prang。Warang 走出执念，看清自己真正想要的人是 Prang，两人双向奔赴，正式在一起。</p>
     
@@ -56,13 +60,6 @@
       <img src="love-senior/6.jpg" alt="学姐爱我可以吗 剧照6">
     </div>
 
-    <p style="text-align:center; margin-top:15px;">
-      <a href="https://www.youtube.com/results?search_query=Love+Senior+Series" target="_blank" class="btn">📺 YouTube 观看</a>
-      <a href="https://www.bilibili.com/search?keyword=学姐爱我可以吗" target="_blank" class="btn">📺 B站 观看</a>
-    </p>
-  </div>
-    
-  </div>
     <p style="text-align:center; margin-top:15px;">
       <a href="https://www.youtube.com/results?search_query=Love+Senior+Series" target="_blank" class="btn">📺 YouTube 观看</a>
       <a href="https://www.bilibili.com/search?keyword=学姐爱我可以吗" target="_blank" class="btn">📺 B站 观看</a>
@@ -82,7 +79,12 @@
       <img src="love-senior-special/5.jpg" alt="学姐爱我可以吗 番外篇 剧照5">
       <img src="love-senior-special/6.jpg" alt="学姐爱我可以吗 番外篇 剧照6">
     </div>
-
+    
+    <p style="text-align:center; margin-top:15px;">
+      <a href="https://www.youtube.com/results?search_query=Love+Senior+Special" target="_blank" class="btn">📺 YouTube 观看</a>
+      <a href="https://www.bilibili.com/search?keyword=学姐爱我可以吗+番外" target="_blank" class="btn">📺 B站 观看</a>
+    </p>
+  </div>
 
   <!-- ================= 剧 3：淡奶之爱 ================= -->
   <div class="card">
@@ -98,6 +100,12 @@
       <img src="taste-milk/6.jpg" alt="淡奶之爱 剧照6">
     </div>
 
+    <p style="text-align:center; margin-top:15px;">
+      <a href="https://www.youtube.com/results?search_query=The+Taste+of+Fresh+Milk" target="_blank" class="btn">📺 YouTube 观看</a>
+      <a href="https://www.bilibili.com/search?keyword=淡奶之爱" target="_blank" class="btn">📺 B站 观看</a>
+    </p>
+  </div>
+
   <!-- ================= 合作歌曲 & IG视频 ================= -->
   <div class="card">
     <h2>🎵 合作歌曲 & MV</h2>
@@ -106,18 +114,18 @@
     </ul>
 
     <h3 style="margin-top: 30px;">🎬 Instagram 视频</h3>
-    <p>点击播放按钮，直接在网页里观看完整竖屏视频（不用跳转，国内可看）。</p>
+    <p>点击播放按钮，直接在网页里观看完整视频（尺寸和原视频一模一样，无裁剪，不跳转）。</p>
     
-    <!-- 🔥 这里是完美适配竖屏视频的播放器，需把 noon-ig.mp4 上传到 GitHub 仓库 -->
-    <div class="video-box-vertical">
+    <!-- 🔥 网页内直接播放，不跳转，还原原视频尺寸 -->
+    <div class="video-container">
+      <!-- ⚠️ 名字必须和 GitHub 上的文件名 noon-ig.mp4 一字不差 -->
       <video controls>
-        <!-- 请确保视频已完整下载并命名为 noon-ig.mp4 -->
         <source src="noon-ig.mp4" type="video/mp4">
         你的浏览器不支持 HTML5 视频播放。
       </video>
     </div>
     <p style="text-align:center; font-size:12px; color:#e91e63; margin-top:10px;">
-      ⚠️ 提示：请把下载好的视频命名为 <strong>noon-ig.mp4</strong> 上传到 GitHub 仓库，否则上方播放器会一片空白。
+      ⚠️ 请确保视频 <strong>noon-ig.mp4</strong> 已上传到 GitHub 仓库。
     </p>
   </div>
 
