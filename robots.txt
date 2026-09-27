@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://noonpraewa.vercel.app/sitemap.xml
